@@ -1,0 +1,27 @@
+<html ng-app="ListaTelefonica">
+<head>
+	<title>Teste Angular</title>
+	<script src="lib/angular/angular.js"></script>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.css">
+	<script>
+		angular.module("ListaTelefonica", []);
+		angular.module("ListaTelefonica").controller("ListaTelefonicaCtrl", function($scope){
+				$scope.app = "Lista Telefonica";
+			});
+	</script>
+	<style>
+		.jumbotron{
+			text-align: center;
+			margin-right: auto;
+			margin-left: auto;
+			margin-top: 20px;
+			width: 400px;
+		}
+	</style>
+</head>
+<body ng-controller="ListaTelefonicaCtrl">
+	<div class="jumbotron">
+		<h4 ng-bind="app"></h4>
+	</div>
+</body>
+</html>
